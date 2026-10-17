@@ -1,0 +1,187 @@
+/* --- Boutons secondaires et indicateurs --- */
+.secondary-glass {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 12px;
+}
+
+.step-indicator {
+  font-size: 0.75rem;
+  color: #ff7acb;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* --- Spinner d'Aura pour le Splash Screen --- */
+.spinner-orbit {
+  width: 50px;
+  height: 50px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.orbit-ring {
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  border-top-color: #ff7acb;
+  border-right-color: #7c5cfc;
+  border-radius: 50%;
+  animation: spinOrbit 1.2s linear infinite;
+}
+
+@keyframes spinOrbit {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.sync-text {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  letter-spacing: 1px;
+}
+
+/* --- Selecteur d'Avatar --- */
+.avatar-picker {
+  margin: 15px 0 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-label {
+  cursor: pointer;
+}
+
+.avatar-placeholder {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px dashed #ff7acb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.camera-icon {
+  font-size: 1.8rem;
+}
+
+.plus-badge {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  background: #7c5cfc;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.avatar-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff7acb;
+  box-shadow: 0 0 15px rgba(255, 122, 203, 0.5);
+}
+
+.avatar-hint {
+  font-size: 0.8rem;
+  color: #cbd5e1;
+  margin-top: 8px;
+}
+
+/* --- Palette de Couleurs d'Univers --- */
+.color-palette {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin: 20px 0 30px 0;
+}
+
+.color-swatch {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.color-swatch:hover {
+  transform: scale(1.15);
+}
+
+.color-swatch.active {
+  border-color: #ffffff;
+  transform: scale(1.25);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+.universe-preview-card {
+  width: 100%;
+  height: 100px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1.5px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.preview-orb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-bottom: 6px;
+}
+
+.preview-text {
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
+.back-link {
+  background: none;
+  border: none;
+  color: #ff7acb;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+/* --- Correction du conteneur et du pavé numérique --- */
+.step-box, .welcome-box, .splash-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.pin-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  width: 100%;
+  max-width: 260px;
+  margin: 20px auto;
+  justify-items: center;
+}
+
+.pin-dots {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin: 20px 0;
+}
